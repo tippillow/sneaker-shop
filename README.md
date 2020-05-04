@@ -1,5 +1,9 @@
 # SneakerShop
 
+## Start app
+
+To start app run "npm i", then "npm run json-server", then "npm run json-server-auth" and then "npm run start".
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0.
 
 ## Development server
