@@ -1,0 +1,9 @@
+<app-header></app-header>
+<div class="container">
+    <app-shoe-info 
+        [shoe]="shoe$  | async"
+        [isLoading]="isLoading$ | async"
+        (add)="onAddClick($event)">
+    </app-shoe-info>
+    <app-footer></app-footer>
+</div>

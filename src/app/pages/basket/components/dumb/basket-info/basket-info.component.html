@@ -1,0 +1,17 @@
+<div *ngIf="basketItems.length > 0; else empty">
+  <p class="value">В корзине {{basketItems.length | replaceEnd}}</p>
+  <p class="price">Стоимость {{totalPrice}} рублей</p>
+  <div *ngFor="let item of basketItems" class="item">
+    <div class="wrapper">
+      <img src={{item.mainPhoto}} alt="" width="250px">
+      <button (click)="onDeleteClick(item)" class="delete">X</button>
+    </div>
+    <p>{{item.price}} ₽</p>
+    <p>{{item.title}}</p>
+    <p>Размер: {{item.size}} US</p>
+  </div>
+</div>
+
+<ng-template #empty>
+  <p>Ваша корзина пуста</p>
+</ng-template>

@@ -1,0 +1,60 @@
+@import '../../../../assets/css/src/extends.less';
+
+.notifications {
+    position: fixed;
+    top: @top_position_notification;
+    right: 0;
+    min-width: @min_notification_width;
+    max-width: @max_notification_width;
+
+    z-index: 1000;
+    
+    .notification {
+        margin: @space_1;
+
+        color: @white;
+
+        border-radius: @border_radius_1;
+
+        overflow: hidden;
+    
+        .title {
+            display: flex;
+            justify-content: space-between;
+            padding-left: @space_2 * 2;
+
+            font-weight: bold;
+
+            background: rgba(0, 0, 0, 0.1);
+        }
+    
+        .message {
+            padding: @space_2 * 2;
+            max-height: @message_min_height;
+            
+            background: rgba(0, 0, 0, 0.2);
+            
+            overflow-y: auto;
+        }
+    
+    
+        &.success {
+            background-color: rgb(0, 255, 0);
+        }
+        
+        &.error {
+            background-color: rgba(255, 0, 0);
+        }
+    }
+
+    .close {
+        font-size: @font_size_3;
+        color: @white;
+
+        background: none;
+        border: none;
+
+        outline: none;
+        cursor: pointer;
+    }
+}

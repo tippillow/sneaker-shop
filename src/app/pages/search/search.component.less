@@ -1,0 +1,33 @@
+@import '../../../assets/css/src/extends.less';
+
+.container {
+    width: @container_width_desktop;
+    margin: 0 auto;
+}
+
+.search {
+    width: @search_input_width;
+    min-height: @search_input_min_height;
+    margin-bottom: @space_3 * 2;
+    padding-left: @space_4;
+
+    border: @border_size_2 solid @search_border_color;
+    border-radius: @border_size_5;
+
+    outline: none;
+}
+
+.search-button {
+    margin-left: -@space_4 * 2;
+    min-height: @search_button_min_height;
+
+    border: none;
+    background: none;
+
+    cursor: pointer;
+    outline: none;
+}
+
+.hack {
+    height: 60vh;
+}

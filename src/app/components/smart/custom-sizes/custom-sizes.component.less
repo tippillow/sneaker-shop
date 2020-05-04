@@ -1,0 +1,25 @@
+@import '../../../../assets/css/src/extends.less';
+
+.size-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: @space_4;
+}
+
+.size {
+    width: @size_width_height;
+    padding: @space_1;
+    margin-right: @space_4;
+    margin-bottom: @space_2;
+
+    text-align: center;
+
+    border: @border_size_1 solid @black;
+    border-radius: @space_5 * 10%;
+
+    cursor: pointer;
+}
+
+.size--selected {
+    background-color: @size_selected;
+}

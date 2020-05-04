@@ -1,0 +1,4 @@
+<a class="item" (click)="onItemClick(item.title)" *ngFor="let item of items">
+    <img src={{item.photo}} width="300px">
+    <p class="title">{{item.title}}</p>
+</a>

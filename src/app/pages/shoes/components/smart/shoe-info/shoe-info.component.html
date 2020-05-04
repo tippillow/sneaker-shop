@@ -1,0 +1,22 @@
+<app-notification></app-notification>
+<div *ngIf="!isLoading; else loading">
+    <h1>{{shoe.title}}</h1>
+    <div class="wrapper">
+        <app-gallery [photos]="shoe.photos"></app-gallery>
+        <div>
+            <p class="price">Цена: {{shoe.price}} рублей
+            </p>
+            <p>Модель: {{shoe.sex}} {{shoe.model}}</p>
+            <p class="sizes">Размеры US:</p>
+            <form action="" [formGroup]="form">
+                <app-custom-sizes [sizes]="shoe.sizes" formControlName="size"></app-custom-sizes>
+            </form>
+            <p *ngIf="message">{{message}}</p>
+            <button class="button" (click)="onAddClick()">Добавить в корзину</button>
+        </div>
+    </div>
+</div>
+
+<ng-template #loading>
+    <h1>Загружаем.....</h1>
+</ng-template>

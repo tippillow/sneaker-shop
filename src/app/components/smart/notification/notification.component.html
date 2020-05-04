@@ -1,0 +1,10 @@
+<div class="notifications">
+    <div *ngFor="let notification of notifications" class="notification" [ngClass]="getClassName(notification)">
+        <div class="title">
+            <div>{{notification.title}}</div>
+            <button class="close" (click)="closeNotification(notification)">X</button>
+        </div>
+    
+        <div class="message">{{notification.message}}</div>
+    </div>
+</div>

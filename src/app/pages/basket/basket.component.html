@@ -1,0 +1,8 @@
+<app-header></app-header>
+<app-notification></app-notification>
+<div class="wrapper">
+    <app-basket-form (post)="onSubmit($event)"></app-basket-form >
+    <app-basket-info 
+        [basketItems]="basketList$ | async"
+        (delete)="onDelete($event)"></app-basket-info>
+</div>

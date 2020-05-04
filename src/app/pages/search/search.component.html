@@ -1,0 +1,15 @@
+<app-header></app-header>
+<div class="container">
+    <app-notification></app-notification>
+    <h1 #title>Поиск</h1>
+    <div class="search-wrapper">
+        <input #search (keydown.enter)="onInputSubmit(search.value)" type="text" class="search" placeholder="Поиск">
+        <button class="search-button" (click)="onInputSubmit(search.value)">🔎</button>
+    </div>
+    <app-shoe-item *ngIf="searchingItems$ | async" [items]="searchingItems$ | async"></app-shoe-item>
+    <div *ngIf="error$ | async">
+        <p>К сожалению, ничего не найдено</p>
+    </div>
+    <div *ngIf="!(searchingItems$ | async)" class="hack"></div>
+    <app-footer class="footer"></app-footer>
+</div>

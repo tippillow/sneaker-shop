@@ -1,0 +1,38 @@
+<form class="form" [formGroup]="authForm">
+
+    
+    <div *ngIf="isSignIn; else signUp">
+        <h1>Авторизация</h1>
+
+        <div>
+            <input class="input" type="text" name="" formControlName="email" placeholder="E-mail">
+        </div>
+    
+        <div>
+            <input class="input" type="password" name="" formControlName="password" placeholder="Пароль">
+        </div>
+    
+        <div class="row">
+            <button class="signUp" (click)="isSignIn = false">Зарегестрироваться</button>
+            <button class="signIn" (click)="onLogin()">Войти</button>
+        </div>
+    </div>
+
+    <ng-template #signUp>
+        <h1>Регистрация</h1>
+
+        <div>
+            <input class="input" type="text" name="" formControlName="email" placeholder="E-mail">
+        </div>
+    
+        <div>
+            <input class="input" type="password" name="" formControlName="password" placeholder="Пароль">
+        </div>
+
+        <div>
+            <input class="input" type="password" name="" formControlName="repeatPassword" placeholder="Подтвердите пароль">
+        </div>
+
+        <button class="signUp" (click)="onLogin()">Зарегестрироваться</button>
+    </ng-template>
+</form>

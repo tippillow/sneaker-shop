@@ -1,0 +1,53 @@
+@import '../../../../../../assets/css/src/extends.less';
+
+:host {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    margin-right: @space_5 * 4;
+
+    text-align: center;
+}
+
+.form {
+    background: @submit_form_background;
+    border-radius: @border_size_5;
+    padding: @space_1 * 12  + @space_1 / 2;
+}
+
+.input {
+    width: @input_size;
+    padding: @space_5;
+    margin-bottom: @space_3 * 2;
+
+    font-size: @font_size_2;
+    color: @black;
+
+    border-radius: @border_radius_1;
+    border: @border_size_1 solid @white;
+
+    @media screen and (max-width: @mobile_size) {
+        width: @input_mobile_size;
+    }
+}
+
+.submit {
+    width: @button_size;
+    padding: @space_4 0;
+
+    color: @white;
+    font-size: @font_size_1;
+    font-weight: @font_weight_6;
+    letter-spacing: @letter_spacing_1;
+    text-transform: uppercase;
+    
+    border: 0;
+    border-radius: @border_radius_1;
+    background: @login_button;
+    cursor: pointer;
+
+    @media screen and (max-width: @mobile_size) {
+        margin-bottom: @space_3;
+    }
+}

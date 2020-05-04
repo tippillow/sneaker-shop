@@ -1,0 +1,25 @@
+@import "../../../../assets/css/src/extends.less";
+
+.wrapper {
+    display: flex;
+    margin-right: @space_5 * 3;
+}
+
+.photo {
+    width: @gallery_photo_width;
+    margin-right: @space_5;
+    margin-bottom: @space_3;
+
+    cursor: pointer;
+}
+
+.main-photo {
+    width: @gallery_main_photo_width;
+    min-height: @main_photo_min_height;
+
+    cursor: zoom-in;
+}
+
+.active {
+    border: @border_size_2 solid @active_border;
+}

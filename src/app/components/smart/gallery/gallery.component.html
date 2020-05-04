@@ -1,0 +1,15 @@
+<div class="wrapper">
+    <div>
+        <div *ngFor="let photo of photos; index as index">
+            <img #image class="photo" src={{photo}} alt="shoe photo" (click)="onImageClick($event, index)">
+        </div>
+    </div>
+    <img #mainPhoto 
+        (mouseleave)="onMouseOver()" 
+        (mousemove)="onMouseMove($event)"  
+        [style.background]="getUrl(photos[0])" 
+        [style.backgroundSize]="getSize()" 
+        [style.backgroundPosition]="'center'" 
+        class="main-photo"
+    >
+</div>

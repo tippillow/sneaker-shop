@@ -1,0 +1,10 @@
+<div class="shoe" *ngFor="let item of items">
+    <img src={{item.mainPhoto}} alt="" width="300px">
+    <h3>{{item.title | cut}}</h3>
+    <p>Цена: {{item.price}} рублей</p>
+    <div>
+        <a (click)="onItemClick(item.model)">
+            <button class="button">Глянуть</button>
+        </a>
+    </div>
+</div>

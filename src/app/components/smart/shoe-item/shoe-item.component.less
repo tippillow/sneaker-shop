@@ -1,0 +1,37 @@
+@import "../../../../assets/css/src/extends.less";
+
+h3, p {
+    margin: @space_2 0;
+    padding: 0;
+}
+
+:host {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.shoe {
+    width: 300px;
+}
+
+.button {
+    width: @button_check_size;
+    padding: @space_3 0;
+    margin-bottom: @space_4 * 4;
+
+    color: @white;
+    font-size: @font_size_1;
+    font-weight: @font_weight_6;
+    letter-spacing: @letter_spacing_1;
+    text-transform: uppercase;
+    
+    border: 0;
+    border-radius: @border_radius_1;
+    background: @check_button;
+    cursor: pointer;
+
+    @media screen and (max-width: @mobile_size) {
+        margin-bottom: @space_3;
+    }
+}

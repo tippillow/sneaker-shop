@@ -1,0 +1,27 @@
+<nav *ngIf="!isLogged; else auth" class="navigation">
+    <ul class="navigation__site">
+        <li class="navigation__item"><a href="/novelty" class="navigation__link">Новинки</a></li>
+        <li class="navigation__item"><a href="/brands" class="navigation__link">Бренды</a></li>
+        <li class="navigation__item"><a href="/shoes" class="navigation__link">Обувь</a></li>
+    </ul>
+    <ul class="navigation__user">
+        <li class="navigation__item"><a href="/auth" class="navigation__link">Вход</a></li>
+        <li class="navigation__item"><a href="/search" class="navigation__link">Поиск</a></li>
+        <li class="navigation__item"><a href="/basket" class="navigation__link">Корзина</a></li>
+    </ul>
+</nav>
+
+<ng-template #auth>
+    <nav class="navigation">
+        <ul class="navigation__site">
+            <li class="navigation__item"><a href="/novelty" class="navigation__link">Новинки</a></li>
+            <li class="navigation__item"><a href="/brands" class="navigation__link">Бренды</a></li>
+            <li class="navigation__item"><a href="/shoes" class="navigation__link">Обувь</a></li>
+        </ul>
+        <ul class="navigation__user">
+            <li class="navigation__item"><a href="" (click)="onLogout()" class="navigation__link">Выход</a></li>
+            <li class="navigation__item"><a href="/search" class="navigation__link">Поиск</a></li>
+            <li class="navigation__item"><a href="/basket" class="navigation__link">Корзина</a></li>
+        </ul>
+    </nav>
+</ng-template>

@@ -1,0 +1,18 @@
+<form class="form" [formGroup]="basketForm">
+    <p>Оформите заказ</p>
+
+    <div>
+        <input class="input" type="email" formControlName="email" placeholder="E-mail">
+    </div>
+
+    <div>
+        <input class="input" type="text" formControlName="fullName" placeholder="ФИО">
+    </div>
+
+    <div>
+        <input class="input" type="tel" formControlName="phone" placeholder="Телефон">
+    </div>
+
+    <button class="submit" (click)="onSubmit()">Отправить</button>
+
+</form>

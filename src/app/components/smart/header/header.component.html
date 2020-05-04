@@ -1,0 +1,10 @@
+<div class="wrapper">
+    <div class="container">
+       <a href="" class="logo"><img src="../../../../assets/css/images/shoes.svg" width="73px" height="73px"></a>
+
+        <app-navigation
+            [isLogged]="isLogged$ | async"
+            (logout)="onLogout()">
+        </app-navigation>
+    </div>
+</div>
