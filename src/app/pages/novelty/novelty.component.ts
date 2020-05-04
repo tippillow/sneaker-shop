@@ -1,6 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Observable, Subject } from 'rxjs';
-import { NOVETLY } from 'src/app/config/constants/url.constants';
+import { NOVELTY } from 'src/app/config/constants/url.constants';
 import { NoveltyService } from 'src/app/services/novelty/novelty.service';
 import { takeUntil } from 'rxjs/operators';
 import { IShoeItemInterface } from 'src/app/interfaces/shoe-item.interface';
@@ -19,7 +19,7 @@ export class NoveltyComponent implements OnInit, OnDestroy {
     constructor(private noveltyService: NoveltyService) { }
 
     ngOnInit() {
-        this.noveltyService.fetchNoveltyItems$(NOVETLY)
+        this.noveltyService.fetchNoveltyItems$(NOVELTY)
             .pipe(
                 takeUntil(this.destroy$)
             )

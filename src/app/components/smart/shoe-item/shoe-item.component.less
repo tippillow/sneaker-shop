@@ -5,14 +5,33 @@ h3, p {
     padding: 0;
 }
 
-:host {
+.container {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    margin-right: 10px;
+}
+
+.viewport {
+    min-height: @viewport_min_height;
+    min-width: @container_width_desktop;
+
+    &::-webkit-scrollbar {
+        width: @scroll_width;
+    }
+
+    &::-webkit-scrollbar-track {
+        border-radius: @border_radius_1;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: @border_radius_1;
+        background: @scroll;
+    }
 }
 
 .shoe {
-    width: 300px;
+    width: @shoe_width;
 }
 
 .button {
@@ -25,7 +44,7 @@ h3, p {
     font-weight: @font_weight_6;
     letter-spacing: @letter_spacing_1;
     text-transform: uppercase;
-    
+
     border: 0;
     border-radius: @border_radius_1;
     background: @check_button;

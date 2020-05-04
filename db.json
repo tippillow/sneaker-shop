@@ -18,7 +18,97 @@
       "photo": "https://sneakerhead.ru/upload/iblock/f2a/f2acd56d8308e96a45964258de5d9515.jpg"
     }
   ],
-  "novetly": [
+  "novelty": [
+    {
+      "brand": "nike",
+      "price": "28990",
+      "title": "Кроссовки Nike Adapt",
+      "model": "Nike Adapt",
+      "mainPhoto": "https://sneakerhead.ru/upload/iblock/c0c/c0c69d4ab32267c19e2f3f9b3ce5455e.jpg",
+      "sex": "Мужские",
+      "sizes": [
+        "11",
+        "12",
+        "9",
+        "10",
+        "8"
+      ]
+    },
+    {
+      "brand": "nike",
+      "price": "8990",
+      "title": "Кроссовки Nike Air Force 1 LV8 Utility",
+      "model": "Nike Air Force 1 LV8 Utility",
+      "mainPhoto": "https://sneakerhead.ru/upload/iblock/1e8/1e87c6477dde3e3e3251f1c7beb16540.jpg",
+      "sex": "Мужские",
+      "sizes": [
+        "11",
+        "12",
+        "9",
+        "10",
+        "8"
+      ]
+    },
+    {
+      "brand": "new balance",
+      "price": "12450",
+      "title": "Кроссовки New Balance 850",
+      "model": "New Balance 850",
+      "mainPhoto": "https://sneakerhead.ru/upload/iblock/568/568812d79a8bff9801cd732322a08c64.jpg",
+      "sex": "Мужские",
+      "sizes": [
+        "11",
+        "12",
+        "9",
+        "10",
+        "8"
+      ]
+    },
+    {
+      "brand": "dc shoes",
+      "price": "9950",
+      "title": "Кроссовки DC Shoes Legasy",
+      "model": "DC Shoes Legasy",
+      "mainPhoto": "https://sneakerhead.ru/upload/iblock/2ab/2aba8dd5e714d21d54782a9635514ec7.jpg",
+      "sex": "Женские",
+      "sizes": [
+        "11",
+        "12",
+        "9",
+        "10",
+        "8"
+      ]
+    },
+    {
+      "brand": "puma",
+      "price": "9490",
+      "title": "Кроссовки Puma Cell Alien Kite",
+      "model": "Puma Cell Alien Kite",
+      "mainPhoto": "https://sneakerhead.ru/upload/iblock/c6a/c6a3456ffbdbdbd010fa8a24c1c5edd9.jpg",
+      "sex": "Мужские",
+      "sizes": [
+        "11",
+        "12",
+        "9",
+        "10",
+        "8"
+      ]
+    },
+    {
+      "brand": "nike",
+      "price": "14990",
+      "title": "Кроссовки Nike Zoom x Vista Grind",
+      "model": "Nike Zoom x Vista Grind",
+      "mainPhoto": "https://sneakerhead.ru/upload/iblock/88b/88b813c3a7dfd4ab618227d3fab3d652.jpg",
+      "sex": "Женские",
+      "sizes": [
+        "11",
+        "12",
+        "9",
+        "10",
+        "8"
+      ]
+    },
     {
       "brand": "nike",
       "price": "28990",

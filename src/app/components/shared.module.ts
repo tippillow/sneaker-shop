@@ -13,6 +13,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ShoeItemComponent } from './smart/shoe-item/shoe-item.component';
 import { CutPipe } from '../pipes/cut/cut.pipe';
 import { NotificationComponent } from './smart/notification/notification.component';
+import {ScrollingModule} from '@angular/cdk/scrolling';
 
 const SHARED_COMPONENTS = [
     HeaderComponent,
@@ -31,7 +32,8 @@ const SHARED_COMPONENTS = [
     imports: [
         CommonModule,
         ReactiveFormsModule,
-        FormsModule
+        FormsModule,
+        ScrollingModule
     ],
     declarations: [
         ...SHARED_COMPONENTS,

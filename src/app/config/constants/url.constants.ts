@@ -1,6 +1,6 @@
 export const PROMO_PHOTOS = 'http://localhost:3004/promoPhotos';
 export const RECOMENDED = 'http://localhost:3004/recomended';
-export const NOVETLY = 'http://localhost:3004/novetly';
+export const NOVELTY = 'http://localhost:3004/novelty';
 export const SHOES = 'http://localhost:3004/shoes';
 export const BRANDS = 'http://localhost:3004/brands';
 export const DEFAULT = 'http://localhost:3004';
