@@ -1,7 +1,7 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Observable, from, Subject } from 'rxjs';
 import { MainPageService } from '../../services/main-page/main-page.service';
-import { PROMO_PHOTOS, RECOMENDED } from '../../config/constants/url.constants';
+import { PROMO_PHOTOS, RECOMMENDED } from '../../config/constants/url.constants';
 import { IRecommendedItemInterface } from '../../interfaces/recomended-item.interface';
 import { takeUntil } from 'rxjs/operators';
 
@@ -26,7 +26,7 @@ export class MainPageComponent implements OnInit, OnDestroy {
                 takeUntil(this.destroy$)
             ).subscribe();
 
-        this.mainPageService.fetchRecommendedItems$(RECOMENDED)
+        this.mainPageService.fetchRecommendedItems$(RECOMMENDED)
             .pipe(
                 takeUntil(this.destroy$)
             ).subscribe();
