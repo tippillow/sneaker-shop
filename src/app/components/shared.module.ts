@@ -27,6 +27,7 @@ const SHARED_COMPONENTS = [
     CustomSizesComponent,
     ShoeItemComponent,
     NotificationComponent,
+    CustomSelectComponent
 ];
 
 @NgModule({
@@ -38,10 +39,7 @@ const SHARED_COMPONENTS = [
     ],
     declarations: [
         ...SHARED_COMPONENTS,
-        PromoItemComponent,
-        CutPipe,
-        CustomSelectComponent,
     ],
-    exports: [...SHARED_COMPONENTS, CustomSelectComponent],
+    exports: [...SHARED_COMPONENTS],
 })
 export class SharedModule { }
