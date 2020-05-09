@@ -27,7 +27,9 @@ const SHARED_COMPONENTS = [
     CustomSizesComponent,
     ShoeItemComponent,
     NotificationComponent,
-    CustomSelectComponent
+    CustomSelectComponent,
+    PromoItemComponent,
+    CutPipe
 ];
 
 @NgModule({
