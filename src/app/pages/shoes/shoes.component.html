@@ -1,6 +1,34 @@
 <app-header></app-header>
+
 <div class="container">
     <h1>Обувь</h1>
+
+    <form [formGroup]="filtersForm" class="filters">
+        <app-custom-select
+            #select
+            [labelText]="'Бренд'"
+            [options]="brands"
+            formControlName="brand">
+        </app-custom-select>
+
+        <app-custom-select
+            #select
+            [labelText]="'Пол'"
+            [options]="genders"
+            formControlName="gender">
+        </app-custom-select>
+
+        <app-custom-select
+            #select
+            [labelText]="'Размер'"
+            [options]="sizes"
+            formControlName="size">
+        </app-custom-select>
+
+        <button class="reset" (click)="onResetClick()">Сбросить</button>
+    </form>
+
     <app-shoe-item [items]="shoeItems$ | async"></app-shoe-item>
+
     <app-footer></app-footer>
 </div>

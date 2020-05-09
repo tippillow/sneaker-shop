@@ -3,7 +3,7 @@ import { IShoeItemInterface } from '../../interfaces/shoe-item.interface';
 
 export function mapShoeDtoListToShoeInterfaceList(items: IShoeDto[]): IShoeItemInterface[] {
     return items.map((item: IShoeDto) => {
-        const { brand, price, title, model, mainPhoto, photos, sex, sizes } = item;
+        const { brand, price, title, model, mainPhoto, photos, gender, sizes } = item;
 
         return {
             brand,
@@ -12,7 +12,7 @@ export function mapShoeDtoListToShoeInterfaceList(items: IShoeDto[]): IShoeItemI
             model,
             mainPhoto,
             photos,
-            sex,
+            gender,
             sizes,
             size: null,
             id: null,

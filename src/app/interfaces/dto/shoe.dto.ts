@@ -5,6 +5,6 @@ export interface IShoeDto {
     model: string;
     mainPhoto: string;
     photos: string[];
-    sex: string;
+    gender: string;
     sizes: string[];
 }

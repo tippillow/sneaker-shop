@@ -5,7 +5,7 @@ export interface IShoeItemInterface {
     model: string;
     mainPhoto: string;
     photos: string[];
-    sex: string;
+    gender: string;
     sizes: string[];
     size?: string;
     id: number;

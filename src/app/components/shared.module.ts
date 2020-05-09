@@ -14,6 +14,7 @@ import { ShoeItemComponent } from './smart/shoe-item/shoe-item.component';
 import { CutPipe } from '../pipes/cut/cut.pipe';
 import { NotificationComponent } from './smart/notification/notification.component';
 import {ScrollingModule} from '@angular/cdk/scrolling';
+import { CustomSelectComponent } from './dumb/custom-select/custom-select.component';
 
 const SHARED_COMPONENTS = [
     HeaderComponent,
@@ -39,7 +40,8 @@ const SHARED_COMPONENTS = [
         ...SHARED_COMPONENTS,
         PromoItemComponent,
         CutPipe,
+        CustomSelectComponent,
     ],
-    exports: [...SHARED_COMPONENTS],
+    exports: [...SHARED_COMPONENTS, CustomSelectComponent],
 })
 export class SharedModule { }

@@ -1,0 +1,14 @@
+<div class="custom-select">
+    <div (click)="changeOpenStatus()" class="label">
+        <label #label>{{labelText}}</label>
+        <button class="button">v</button>
+    </div>
+
+    <div class="options" *ngIf="isOpen" (mouseleave)="changeOpenStatus()">
+        <div *ngFor="let option of options"
+             (click)="onOptionSelect(option)"
+             class="option">
+            {{option}}
+        </div>
+    </div>
+</div>

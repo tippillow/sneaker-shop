@@ -1,0 +1,44 @@
+@import '../../../../assets/css/src/extends.less';
+
+.custom-select {
+    width: @custom_select_width;
+    margin-bottom: @space_4;
+}
+
+.label {
+    display: flex;
+    justify-content: space-between;
+    padding-left: @space_1;
+
+    border: @border_size_1 solid @custom_select_color;
+}
+
+.options {
+    position: absolute;
+    width: @custom_select_width;
+
+    z-index: 1000;
+}
+
+.option {
+    padding-left: @space_1;
+
+    border: @border_size_1 solid @custom_select_color;
+
+    &:hover {
+        color: @white;
+
+        background-color: @option_background;
+    }
+
+    cursor: pointer;
+}
+
+.button {
+    background: none;
+    border: none;
+    border-left: @border_size_1 solid @custom_select_color;
+
+    outline: none;
+    cursor: pointer;
+}

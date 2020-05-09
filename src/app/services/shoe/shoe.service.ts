@@ -44,7 +44,7 @@ export class ShoeService {
     }
 
     private mapShoeDtoToShoeInterface(item: IShoeDto): IShoeItemInterface {
-        const { brand, price, title, model, mainPhoto, photos, sex, sizes } = item;
+        const { brand, price, title, model, mainPhoto, photos, gender, sizes } = item;
 
         return {
             brand,
@@ -53,7 +53,7 @@ export class ShoeService {
             model,
             mainPhoto,
             photos,
-            sex,
+            gender,
             sizes,
             size: null,
             id: null,

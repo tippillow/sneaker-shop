@@ -6,7 +6,7 @@
         <div>
             <p class="price">Цена: {{shoe.price}} рублей
             </p>
-            <p>Модель: {{shoe.sex}} {{shoe.model}}</p>
+            <p>Модель: {{shoe.gender}} {{shoe.model}}</p>
             <p class="sizes">Размеры US:</p>
             <form action="" [formGroup]="form">
                 <app-custom-sizes [sizes]="shoe.sizes" formControlName="size"></app-custom-sizes>

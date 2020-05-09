@@ -38,7 +38,7 @@ export class CustomSizesComponent implements OnInit, ControlValueAccessor {
         this.onTouched = fn;
     }
 
-    public onSizeCLick(element: any) {
+    public onSizeClick(element: any) {
         this.onChange(element.target.textContent);
         this.sizesList.forEach((size: ElementRef) => {
             this.renderer.removeClass(size.nativeElement, 'size--selected');

@@ -4,3 +4,28 @@
     width: @container_width_desktop;
     margin: 0 auto;
 }
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: @space_3;
+}
+
+.reset {
+    height: @reset_height;
+
+    color: @white;
+
+    border: @border_size_1 solid @reset_button;
+    border-radius: @border_radius_1;
+    background-color: @reset_button;
+
+    outline: none;
+    cursor: pointer;
+
+    &:hover {
+        color: @black;
+
+        background-color: @white;
+    }
+}
