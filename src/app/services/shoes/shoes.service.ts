@@ -63,7 +63,7 @@ export class ShoesService {
     }
 
     private isNeededGender(genderFilterValue: string, shoe: IShoeItemInterface): boolean {
-        return genderFilterValue ? Genders[genderFilterValue] === shoe.gender : true;
+        return genderFilterValue ? genderFilterValue === shoe.gender : true;
     }
 
     private onFetchError(error: HttpErrorResponse): void {

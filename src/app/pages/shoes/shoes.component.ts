@@ -21,7 +21,7 @@ export class ShoesComponent implements OnInit, OnDestroy {
 
     public shoeItems$: Observable<IShoeItemInterface[]>;
     public brands = Object.keys(Brands);
-    public genders = Object.keys(Genders);
+    public genders = Object.keys(Genders).map((gender: string) => Genders[gender]);
     public sizes = Object.keys(Sizes);
     public filtersForm: FormGroup;
 
