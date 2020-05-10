@@ -45,7 +45,9 @@ export class ShoesService {
 
     public shoeFiltration(filtersFormValue: IFiltersFormInterface): void {
         const filteredShoes = this._shoeItemsCopy$.value.filter((shoe: IShoeItemInterface) => {
-            return this.isNeededBrand(filtersFormValue.brand, shoe) && this.isNeededSize(filtersFormValue.size, shoe) && this.isNeededGender(filtersFormValue.gender, shoe);
+            return this.isNeededBrand(filtersFormValue.brand, shoe)
+                && this.isNeededSize(filtersFormValue.size, shoe)
+                && this.isNeededGender(filtersFormValue.gender, shoe);
         });
         this._shoeItems$.next(filteredShoes);
     }
