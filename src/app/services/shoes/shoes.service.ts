@@ -7,8 +7,6 @@ import {IShoeItemInterface} from 'src/app/interfaces/shoe-item.interface';
 import {IShoeDto} from 'src/app/interfaces/dto/shoe.dto';
 import {mapShoeDtoListToShoeInterfaceList} from '../../utils/map-shoe-dto-list-to-shoe-interface-list/map-shoe-dto-list-to-shoe-interface-list';
 import {Sizes} from '../../config/enums/sizes.enum';
-import {Brands} from '../../config/enums/brands.enum';
-import {Genders} from '../../config/enums/genders.enum';
 import {IFiltersFormInterface} from '../../interfaces/filters-form.interface';
 
 @Injectable({
@@ -57,7 +55,7 @@ export class ShoesService {
     }
 
     private isNeededBrand(brandFilterValue: string, shoe: IShoeItemInterface): boolean {
-        return brandFilterValue ? Brands[brandFilterValue] === shoe.brand : true;
+        return brandFilterValue ? brandFilterValue === shoe.brand : true;
     }
 
     private isNeededSize(sizeFilterValue: string, shoe: IShoeItemInterface): boolean {

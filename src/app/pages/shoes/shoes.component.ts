@@ -20,7 +20,7 @@ export class ShoesComponent implements OnInit, OnDestroy {
     @ViewChildren('select') selects: QueryList<CustomSelectComponent>;
 
     public shoeItems$: Observable<IShoeItemInterface[]>;
-    public brands = Object.keys(Brands);
+    public brands = Object.keys(Brands).map((brand: string) => Brands[brand]);
     public genders = Object.keys(Genders).map((gender: string) => Genders[gender]);
     public sizes = Object.keys(Sizes);
     public filtersForm: FormGroup;
